@@ -30,8 +30,8 @@
 #define USE_SWFX_TECHNICOLOR   	0 	//[0 or 1] Technicolor : Attempts to mimic the look of an old movie using the Technicolor three-strip color process. Algorithm from SweetFX
 #define USE_DPX           	0	//[0 or 1] Cineon DPX : Should make the image look like it's been converted to DXP Cineon - basically it's another movie-like look similar to technicolor.
 #define USE_MONOCHROME    	0	//[0 or 1] Monochrome : Monochrome makes the colors disappear. No control values.
-#define USE_LIFTGAMMAGAIN 	0	//[0 or 1] Lift Gamma Gain : Adjust brightness and color of shadows, midtones and highlights.
-#define USE_TONEMAP       	1 	//[0 or 1] Tonemap : Adjust gamma, exposure, saturation, bleach and defog. (may cause clipping).
+#define USE_LIFTGAMMAGAIN 	1	//[0 or 1] Lift Gamma Gain : Adjust brightness and color of shadows, midtones and highlights.
+#define USE_TONEMAP       	0 	//[0 or 1] Tonemap : Adjust gamma, exposure, saturation, bleach and defog. (may cause clipping).
 #define USE_VIBRANCE      	0 	//[0 or 1] Vibrance : Intelligently saturates (or desaturates if you use negative values) the pixels depending on their original saturation.
 #define USE_CURVES        	1 	//[0 or 1] Curves : Contrast adjustments using S-curves.
 #define USE_SEPIA         	0 	//[0 or 1] Sepia : Sepia tones the image.
@@ -53,10 +53,10 @@
 #define USE_LENSDIRT		0	//[0 or 1] Lensdirt: Simulates a dirty camera lens. IMPORTANT: bloom threshold and amount have influence on the intensity of the dirt!
 #define USE_GAUSSIAN_ANAMFLARE	0	//[0 or 1] Gaussian Anamflare: Applies a horizontal light beam to bright pixels.
 #define USE_BLOOM 		1	//[0 or 1] Bloom: Makes bright lights bleed their light into their surroundings. NOT the SweetFX way to do bloom but a more proper way.
-#define USE_LENZFLARE 		0	//[0 or 1] Lenz Flare: Boris Vorontsov's Skyrim Lensflare with custom offsets, ported to MasterEffect.
+#define USE_LENZFLARE 		1	//[0 or 1] Lenz Flare: Boris Vorontsov's Skyrim Lensflare with custom offsets, ported to MasterEffect.
 #define USE_CHAPMAN_LENS	0	//[0 or 1] Chapman's lensflare: Simple lensflare shader with one big halo.
-#define USE_GODRAYS		0	//[0 or 1] Godrays: Adds some light rays rotating around screen center.
-#define USE_ANAMFLARE		0	//[0 or 1] Anamorphic Lensflare: adds some horizontal light flare, simulating the use of an anamorphic lens while recording.
+#define USE_GODRAYS		1	//[0 or 1] Godrays: Adds some light rays rotating around screen center.
+#define USE_ANAMFLARE		1	//[0 or 1] Anamorphic Lensflare: adds some horizontal light flare, simulating the use of an anamorphic lens while recording.
 
 //DEPTH BASED
 #define USE_AMBIENTOCCLUSION	0	//[0 or 1] Ambient Occlusion: Enables physically incorrect shading that most newer gen games use. Multiple algorithms available.
@@ -83,20 +83,20 @@
 
 //COLOR LOOKUP TABLE
 #define	iLookupTableMode		2	//[1 or 2] 1: mclut.png (gradient) | 2: mclut3d (3D Photoshop LUT)
-#define fLookupTableMix			0.1	//[0.0 to 1.0] Amount of color change by lookup table. 0.0 means no change, 1.0 means full effect.
+#define fLookupTableMix			1.0	//[0.0 to 1.0] Amount of color change by lookup table. 0.0 means no change, 1.0 means full effect.
 
 //CARTOON
 #define CartoonPower         		4.5     //[0.1 to 10.0] Amount of effect you want.
 #define CartoonEdgeSlope     		1.5     //[0.1 to 8.0] Raise this to filter out fainter edges. You might need to increase the power to compensate. Whole numbers are faster.
 
 //LEVELS
-#define Levels_black_point 		0    	//[0 to 255] The black point is the new black - literally. Everything darker than this will become completely black. Default is 16.0
-#define Levels_white_point 		255   	//[0 to 255] The new white point. Everything brighter than this becomes completely white. Default is 235.0
+#define Levels_black_point 		16    	//[0 to 255] The black point is the new black - literally. Everything darker than this will become completely black. Default is 16.0
+#define Levels_white_point 		235   	//[0 to 255] The new white point. Everything brighter than this becomes completely white. Default is 235.0
 
 //TECHNICOLOR
-#define ColStrengthR 			0.9	//[0.05 to 1.0] Color Strength of Red channel. Higher means darker and more intense colors.	
-#define ColStrengthG 			0.9	//[0.05 to 1.0] Color Strength of Green channel. Higher means darker and more intense colors.
-#define ColStrengthB 			0.9	//[0.05 to 1.0] Color Strength of Blue channel. Higher means darker and more intense colors.
+#define ColStrengthR 			0.2	//[0.05 to 1.0] Color Strength of Red channel. Higher means darker and more intense colors.	
+#define ColStrengthG 			0.2	//[0.05 to 1.0] Color Strength of Green channel. Higher means darker and more intense colors.
+#define ColStrengthB 			0.2	//[0.05 to 1.0] Color Strength of Blue channel. Higher means darker and more intense colors.
 #define TechniBrightness 		1.0	//[0.5 to 1.5] Brightness Adjustment, higher means brighter image.
 #define TechniStrength 			1.0	//[0.0 to 1.0] Strength of Technicolor effect. 0.0 means original image.
 #define TechniSat 			0.7	//[0.0 to 1.5] Additional saturation control since technicolor tends to oversaturate the image.
@@ -109,9 +109,9 @@
 #define blueNegativeAmount  		0.88   	//[0.00 to 1.00]
 
 //DPX
-#define DPXRed   			15.0  	//[1.0 to 15.0] Amount of DPX applies on Red color channel
-#define DPXGreen 			15.0  	//[1.0 to 15.0] ""
-#define DPXBlue  			15.0  	//[1.0 to 15.0] ""
+#define DPXRed   			8.0  	//[1.0 to 15.0] Amount of DPX applies on Red color channel
+#define DPXGreen 			8.0  	//[1.0 to 15.0] ""
+#define DPXBlue  			8.0  	//[1.0 to 15.0] ""
 #define DPXColorGamma    		2.2  	//[0.1 to 2.5] Adjusts the colorfulness of the effect in a manner similar to Vibrance. 1.0 is neutral.
 #define DPXSaturation 			1.3  	//[0.0 to 8.0] Adjust saturation of the effect. 1.0 is neutral.
 #define DPXRedC   			0.36 	//[0.60 to 0.20] 
@@ -120,36 +120,36 @@
 #define DPXBlend 			0.10  	//[0.00 to 1.00] How strong the effect should be.
 
 //LIFTGAMMAGAIN
-#define RGB_Lift  		float3(1.000, 1.000, 1.000)  //[0.000 to 2.000] Adjust shadows for Red, Green and Blue.
+#define RGB_Lift  		float3(0.850, 0.850, 0.850)  //[0.000 to 2.000] Adjust shadows for Red, Green and Blue.
 #define RGB_Gamma 		float3(1.000, 1.000, 1.000)  //[0.000 to 2.000] Adjust midtones for Red, Green and Blue
-#define RGB_Gain  		float3(1.000, 1.000, 1.000)  //[0.000 to 2.000] Adjust highlights for Red, Green and Blue
+#define RGB_Gain  		float3(1.175, 1.175, 1.175)  //[0.000 to 2.000] Adjust highlights for Red, Green and Blue
 
 //TONEMAP
-#define Gamma       			1.170  	//[0.000 to 2.000] Adjust midtones. 1.000 is neutral. This setting does exactly the same as the one in Lift Gamma Gain, only with less control.
-#define Exposure    			0.020  	//[-1.000 to 1.000] Adjust exposure
-#define Saturation  			-0.35  	//[-1.000 to 1.000] Adjust saturation
+#define Gamma       			1.000  	//[0.000 to 2.000] Adjust midtones. 1.000 is neutral. This setting does exactly the same as the one in Lift Gamma Gain, only with less control.
+#define Exposure    			0.000  	//[-1.000 to 1.000] Adjust exposure
+#define Saturation  			0.000  	//[-1.000 to 1.000] Adjust saturation
 #define Bleach      			0.000  	//[0.000 to 1.000] Brightens the shadows and fades the colors
 #define Defog       			0.000  	//[0.000 to 1.000] How much of the color tint to remove
-#define FogColor 			float3(0.00, 0.00, 0.00) //[0.00 to 2.55, 0.00 to 2.55, 0.00 to 2.55] What color to remove - default is blue
+#define FogColor 			float3(0.00, 0.00, 2.55) //[0.00 to 2.55, 0.00 to 2.55, 0.00 to 2.55] What color to remove - default is blue
 
 //VIBRANCE
-#define Vibrance     			0.30  	//[-1.00 to 1.00] Intelligently saturates (or desaturates if you use negative values) the pixels depending on their original saturation.
+#define Vibrance     			0.100  	//[-1.00 to 1.00] Intelligently saturates (or desaturates if you use negative values) the pixels depending on their original saturation.
 #define Vibrance_RGB_balance 		float3(1.00, 1.00, 1.00) //[-10.00 to 10.00,-10.00 to 10.00,-10.00 to 10.00] A per channel multiplier to the Vibrance strength so you can give more boost to certain colors over others
 
 //CURVES
-#define Curves_mode        		2 	//[0|1|2] Choose what to apply contrast to. 0 = Luma, 1 = Chroma, 2 = both Luma and Chroma. Default is 0 (Luma)
-#define Curves_contrast 		1.0	//[-1.00 to 1.00] The amount of contrast you want
+#define Curves_mode        		0 	//[0|1|2] Choose what to apply contrast to. 0 = Luma, 1 = Chroma, 2 = both Luma and Chroma. Default is 0 (Luma)
+#define Curves_contrast 		0.70 	//[-1.00 to 1.00] The amount of contrast you want
 
 // -- Advanced curve settings --
-#define Curves_formula     		1	//[1|2|3|4|5|6|7|8|9|10] The contrast s-curve you want to use.
+#define Curves_formula     		3 	//[1|2|3|4|5|6|7|8|9|10] The contrast s-curve you want to use.
                              			//1 = Sine, 2 = Abs split, 3 = Smoothstep, 4 = Exp formula, 5 = Simplified Catmull-Rom (0,0,1,1), 6 = Perlins Smootherstep
                              			//7 = Abs add, 8 = Techicolor Cinestyle, 9 = Parabola, 10 = Half-circles.
                              			//Note that Technicolor Cinestyle is practically identical to Sine, but runs slower. In fact I think the difference might only be due to rounding errors.
                              			//I prefer 2 myself, but 3 is a nice alternative with a little more effect (but harsher on the highlight and shadows) and it's the fastest formula.
 		
 //SEPIA
-#define ColorTone 		float3(1.00, 1.00, 1.00) //[0.00 to 2.55, 0.00 to 2.55, 0.00 to 2.55] What color to tint the image
-#define GreyPower  			0.00    //[0.00 to 1.00] How much desaturate the image before tinting it
+#define ColorTone 		float3(1.40, 1.10, 0.90) //[0.00 to 2.55, 0.00 to 2.55, 0.00 to 2.55] What color to tint the image
+#define GreyPower  			0.11    //[0.00 to 1.00] How much desaturate the image before tinting it
 #define SepiaPower 			0.58    //[0.00 to 1.00] How much to tint the image
 
 //SKYRIM TONEMAPPING
@@ -197,10 +197,10 @@
 #define	EToneMappingOversaturationV6Day  2500.0 
 
 //COLORMOOD
-#define fRatio				0.44 	//[0.00 to 3.00] Amount of moody coloring you want
-#define moodR				0.9 	//[0.0 to 2.0] How strong dark red colors shall be boosted
-#define moodG				0.9 	//[0.0 to 2.0] How strong dark green colors shall be boosted
-#define moodB				0.8 	//[0.0 to 2.0] How strong dark blue colors shall be boosted
+#define fRatio				0.4 	//[0.00 to 3.00] Amount of moody coloring you want
+#define moodR				1.0 	//[0.0 to 2.0] How strong dark red colors shall be boosted
+#define moodG				1.1 	//[0.0 to 2.0] How strong dark green colors shall be boosted
+#define moodB				0.5 	//[0.0 to 2.0] How strong dark blue colors shall be boosted
 
 //CROSSPROCESS
 #define CrossContrast			0.95  	//[0.5 to 2.00] The names of these values should explain their functions
@@ -275,10 +275,10 @@
 
 //BLOOM
 #define iBloomMixmode			2	//[1 to 4] 1: Linear add | 2: Screen add | 3: Screen/Lighten/Opacity | 4: Lighten
-#define fBloomThreshold			0.20	//[0.1 to 1.0] Every pixel brighter than this value triggers bloom.
-#define fBloomAmount			0.08	//[1.0 to 20.0] Intensity of bloom.
-#define fBloomSaturation 		0.1	//[0.0 to 2.0] Bloom saturation. 0.0 means white bloom, 2.0 means very very colorful bloom.
-#define fBloomTint 		float3(1.0,1.0,1.0) //[0.0 to 1.0] R, G and B components of bloom tintcolor the bloom color gets shifted to.
+#define fBloomThreshold			0.96	//[0.1 to 1.0] Every pixel brighter than this value triggers bloom.
+#define fBloomAmount			0.8	//[1.0 to 20.0] Intensity of bloom.
+#define fBloomSaturation 		0.8	//[0.0 to 2.0] Bloom saturation. 0.0 means white bloom, 2.0 means very very colorful bloom.
+#define fBloomTint 		float3(0.7,0.8,1.0) //[0.0 to 1.0] R, G and B components of bloom tintcolor the bloom color gets shifted to.
 
 //LENZ FLARE
 #define LENZDEPTHCHECK 			1    	//[0 or 1] if 1, only pixels with depth = 1 get lens flare, this prevents white objects from getting flare source which would normally happen in LDR
@@ -301,7 +301,7 @@
 #define fGodrayExposure			1.0	//[0.7 to 1.5] Upscales the godray's brightness
 #define fGodrayWeight			1.25	//[0.8 to 1.7] weighting
 #define fGodrayDensity			1.0	//[0.2 to 2.0] Density of rays, higher means more and brighter rays
-#define fGodrayThreshold		0.9   	//[0.6 to 1.0] Minimum brightness an object must have to cast godrays
+#define fGodrayThreshold		0.88   	//[0.6 to 1.0] Minimum brightness an object must have to cast godrays
 
 //ANAMORPHIC LENSFLARE
 #define bFlareDepthCheckEnable		1	//[0 or 1] if 1, only pixels with depth = 1 get an anamflare, this prevents white objects from getting flare source which would normally happen in LDR
@@ -316,23 +316,23 @@
 
 /*==============================================================================*/
 //AMBIENT OCCLUSION - GLOBAL PARAMETERS
-#define AO_METHOD			1	//[1 to 2] 1: SSAO | 2: Raymarch AO | 3: HBAO | 4: SSGI | 5: Raymarch HBAO | 6: Alchemy SAO
+#define AO_METHOD			6	//[1 to 2] 1: SSAO | 2: Raymarch AO | 3: HBAO | 4: SSGI | 5: Raymarch HBAO | 6: Alchemy SAO
 #define AO_TEXSCALE   			1.00	//[0.25 to 1.0] Scale of AO resolution, 1.0 means fullscreen. Lower resolution means less pixels to process and more performance but also less quality.
-#define AO_SHARPNESS			1.0	//[0.05 to 2.0] 1: AO sharpness, higher means more sharp geometry edges but noisier AO, less means smoother AO but blurry in the distance.
+#define AO_SHARPNESS			0.8	//[0.05 to 2.0] 1: AO sharpness, higher means more sharp geometry edges but noisier AO, less means smoother AO but blurry in the distance.
 #define AO_SHARPNESS_DETECT		2	//[1 or 2] AO must not blur over object edges. 1 : edge detection by depth (old) 2 : edge detection by normal (new). 2 is better but produces some black outlines.
-#define AO_BLUR_STEPS			10	//[5 to 15] Offset count for AO smoothening. Higher means more smooth AO but also blurrier AO.
+#define AO_BLUR_STEPS			11	//[5 to 15] Offset count for AO smoothening. Higher means more smooth AO but also blurrier AO.
 #define AO_DEBUG			0	//[0 to 2] Enables raw debug output. 1: occlusion | 2: color bouncing (SSGI only!)
-#define AO_LUMINANCE_CONSIDERATION	0	//[0 or 1] Enables dampening of AO intensity on bright pixels, to preserve bright light sprites or beter lit areas. Not for GI!
-#define AO_LUMINANCE_LOWER		0.0	//[0.0 to 1.0] Lower brightness threshold where AO starts to fade out. Below this threshold AO has full power.
-#define AO_LUMINANCE_UPPER		1.0	//[0.0 to 1.0] Upper brightness threshold where AO starts to fade out. Above this threshold AO is 0.
-#define AO_FADE_START			0.0	//[0.0 to 1.0] Distance from camera where AO starts to fade out. 0.0 means camera itself, 1.0 means infinite distance.
+#define AO_LUMINANCE_CONSIDERATION	1	//[0 or 1] Enables dampening of AO intensity on bright pixels, to preserve bright light sprites or beter lit areas. Not for GI!
+#define AO_LUMINANCE_LOWER		0.3	//[0.0 to 1.0] Lower brightness threshold where AO starts to fade out. Below this threshold AO has full power.
+#define AO_LUMINANCE_UPPER		0.8	//[0.0 to 1.0] Upper brightness threshold where AO starts to fade out. Above this threshold AO is 0.
+#define AO_FADE_START			0.4	//[0.0 to 1.0] Distance from camera where AO starts to fade out. 0.0 means camera itself, 1.0 means infinite distance.
 #define AO_FADE_END			0.9	//[0.0 to 1.0] Distance from camera where AO fades out completely. 0.0 means camera itself, 1.0 means infinite distance.
 
 //AMBIENT OCCLUSION - SSAO
-#define iSSAOSamples   			32	//[32 to 128] Amount of samples. Don't set too high or shader compilation time goes through the roof.
+#define iSSAOSamples   			16	//[32 to 128] Amount of samples. Don't set too high or shader compilation time goes through the roof.
 #define fSSAOSamplingRange		80.0	//[10.0 to 50.0] SSAO sampling range. High range values might need more samples so raise both.
-#define fSSAODarkeningAmount 		5.0	//[0.0 to 5.0] Amount of SSAO corner darkening
-#define fSSAOBrighteningAmount  	5.0	//[0.0 to 5.0] Amount of SSAO edge brightening
+#define fSSAODarkeningAmount 		1.5	//[0.0 to 5.0] Amount of SSAO corner darkening
+#define fSSAOBrighteningAmount  	1.0	//[0.0 to 5.0] Amount of SSAO edge brightening
 
 //AMBIENT OCCLUSION - RAYMARCH SSAO
 #define iRayAOSamples   		24	//[10 to 78] Amount of sample "rays" Higher means more accurate AO but also less performance.
@@ -364,10 +364,10 @@
 #define fRayHBAO_AngleBiasTan 		0.0	//[0.0 to 1.0] Angle bias in tangent space. Used for ignoring occluders that don't have a big angle difference to the source, i.e. flat surfaces that may shadoe themselves.
 
 //AMBIENT OCCLUSION - SCALABLE AMBIENT OBSCURANCE
-#define fSAOIntensity 			10.0	//[1.0 to 10.0] Linearly multiplies AO intensity.	
+#define fSAOIntensity 			6.0	//[1.0 to 10.0] Linearly multiplies AO intensity.	
 #define fSAOClamp 			2.5	//[1.0 to 10.0] Higher values shift AO more into black. Useful for light gray AO caused by high SAO radius.
 #define fSAORadius 			2.3	//[1.0 to 10.0] SAO sampling radius. Higher values also lower AO intensity extremely because of Alchemy's extremely retarded falloff formula.
-#define fSAOBias 			0.001	//[0.001 to 0.05] Minimal surface angle for AO consideration. Useful to prevent self-occlusion of flat surfaces caused by floating point inaccuracies.
+#define fSAOBias 			0.2	//[0.001 to 0.05] Minimal surface angle for AO consideration. Useful to prevent self-occlusion of flat surfaces caused by floating point inaccuracies.
 #define iSAOSamples 			18	//[10 to 96] Amount of SAO Samples. Maximum of 96 is defined by formula.
 
 /*==============================================================================*/
@@ -416,9 +416,9 @@
 \*==============================================================================*/
 
 //SHARPEN
-#define fSharpBias  	     		0.5	//[0.05 to 1.0] How big the sharpen offset is (used to compare neighbor pixels to get sharpen amount
-#define fSharpStrength 			1.0	//[0.05 to 1.0] Amount of sharpening you want.
-#define fSharpClamp 			0.2	//[0.2 to 2.0] Clamps the sharpening to a maximum amount to prevent aliasing
+#define fSharpBias  	     		0.06	//[0.05 to 1.0] How big the sharpen offset is (used to compare neighbor pixels to get sharpen amount
+#define fSharpStrength 			0.07	//[0.05 to 1.0] Amount of sharpening you want.
+#define fSharpClamp 			0.3	//[0.2 to 2.0] Clamps the sharpening to a maximum amount to prevent aliasing
 
 //FISHEYE, CHROMATIC ABBERATION
 #define fFisheyeZoom			0.5   	//[0.5 to 1.0] some lens zoom to hide bugged edges due to texcoord modification
@@ -436,15 +436,15 @@
 #define fExplosionRadius    		10.5    //[0.2 to 100.0] Amount of effect you want.
 
 //SMAA
-#define fSMAAThreshold			0.1	//[0.05 to 0.20] Edge detection Threshold. If SMAA misses some edges try lowering this slightly. I prefer between 0.08 and 0.12.
-#define iSMAAMaxSearchSteps		32	//[0 to 98] Determines the radius SMAA will search for aliased edges
-#define iSMAAMaxSearchStepsDiag		24	//[0 to 32] Determines the radius SMAA will search for diagonal aliased edges
-#define iSMAACornerRounding		0	//[0 to 100] Determines the percent of antialiasing to apply to corners. 0 seems to affect fine text the least so it's the default.
-#define iSMAAEdgeDetectionMode		1	//[1 to 3] 1: Luma edge detection 2: Color edge detection 3: Depth edge detection
-#define bSMAAPredication		1	//[0 or 1] Enables predication which uses BOTH the color and the depth texture for edge detection to more accurately detect edges.
-#define fSMAAPredicationThreshold	0.05	//[0.001 to 0.2] Threshold to be used in the depth buffer.                                      
-#define fSMAAPredicationScale		0.5	//[0.5 to 4.0] How much to scale the global Threshold used for luma or color edge detection when using predication
-#define fSMAAPredicationStrength	1.0	//[0.1 to 1.0] How much to locally decrease the Threshold.
+#define fSMAAThreshold			0.05	//[0.05 to 0.20] Edge detection Threshold. If SMAA misses some edges try lowering this slightly. I prefer between 0.08 and 0.12.
+#define iSMAAMaxSearchSteps		64	//[0 to 98] Determines the radius SMAA will search for aliased edges
+#define iSMAAMaxSearchStepsDiag		32	//[0 to 32] Determines the radius SMAA will search for diagonal aliased edges
+#define iSMAACornerRounding		100	//[0 to 100] Determines the percent of antialiasing to apply to corners. 0 seems to affect fine text the least so it's the default.
+#define iSMAAEdgeDetectionMode		2	//[1 to 3] 1: Luma edge detection 2: Color edge detection 3: Depth edge detection
+#define bSMAAPredication		0	//[0 or 1] Enables predication which uses BOTH the color and the depth texture for edge detection to more accurately detect edges.
+#define fSMAAPredicationThreshold	0.01	//[0.001 to 0.2] Threshold to be used in the depth buffer.                                      
+#define fSMAAPredicationScale		2.0	//[0.5 to 4.0] How much to scale the global Threshold used for luma or color edge detection when using predication
+#define fSMAAPredicationStrength	0.4	//[0.1 to 1.0] How much to locally decrease the Threshold.
 #define iSMAADebugOutput		0	//[0 to 4] 0: Normal | 1: edgesTex | 2: blendTex | 3: areaTex | 4: searchTex - Only for troubleshooting. Users don't need to mess with this.
 
 //HEAT HAZE
