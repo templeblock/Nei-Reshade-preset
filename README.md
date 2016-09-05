@@ -14,18 +14,26 @@
   <li>Abrimos Nei-Reshade.zip y extraemos la carpeta "bin64" dentro de la carpeta del juego.
     (Para actualizar sera extraer la carpeta bin64 en la carpeta y luego nos preguntara si deseamos sustituir los archivos y aceptamos)</li>
   <li>Ejecutamos el juego y si todo a ido bien en la esquina superior izquierda saldrá un texto blanco informando lo que todo se ha cargado correctamente.</li>
-  <li>Ahora deberemos configurar las opciones del juego: Oclusion ambiental OFF - Mejor filtrado de texturas OFF - Desenfoque de profundidad OFF - Adaptacion a la luz OFF - Textura de alta resolucion de personaje ON
+  <li>Ahora deberemos configurar las opciones del juego:
+    <ul>
+        <li>Oclusion ambiental OFF</li>
+        <li>Mejor filtrado de texturas OFF</li>
+        <li>Desenfoque de profundidad OFF</li>
+        <li>Adaptacion a la luz OFF</li>
+        <li>Textura de alta resolucion de personaje ON</li>
+    </ul>
+  </li>
   <ul>
     <li><p>Graficos a tope para ordenadores potentes </p><img src="http://i.imgur.com/fjj05bH.png" width="35%" /></li>
       <p>Si el el ordenador no puede con la configuracion anterior podemos bajar hasta encontrar nuestra configuracion ideal los siguientes ajustes</p>
   </ul>
   <ul>
-      <li>#Animacion (La diferencia entre medio y alto apenas se nota pero si se nota en el rendimiento)</li>
-      <li>#Medio ambiente (Lo mismo que la anterior)</li>
-      <li>#Reflejos</li>
-      <li>#Muestreo de renderizado(Consume muchisimo el sobremuestreo y apenas se nota, lo mejor ponerlo en "Valor nativo")</li>
-      <li>#Sombras (este ajuste afecta a la distancia a la cual se muestran las sombras "Buenas" y no las predefinidas)</li>
-      <li>#Shaders (Esto consume bastante pero tambien se nota muchisimo el cambio)</li>
+      <li>Animacion (La diferencia entre medio y alto apenas se nota pero si se nota en el rendimiento)</li>
+      <li>Medio ambiente (Lo mismo que la anterior)</li>
+      <li>Reflejos</li>
+      <li>Muestreo de renderizado(Consume muchisimo el sobremuestreo y apenas se nota, lo mejor ponerlo en "Valor nativo")</li>
+      <li>Sombras (este ajuste afecta a la distancia a la cual se muestran las sombras "Buenas" y no las predefinidas)</li>
+      <li>Shaders (Esto consume bastante pero tambien se nota muchisimo el cambio)</li>
   </ul>
   <p>Yo suelo tenerlo como la siguiente imagen para tener un buen rendimiento en MCM.</p>
   <img src="http://i.imgur.com/y3oXBgM.png" width="35%" />
