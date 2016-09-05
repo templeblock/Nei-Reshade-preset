@@ -26,8 +26,8 @@
 </ul>
 
 <ul>
-    <li><p>Graficos a tope para ordenadores potentes </p><img src="http://i.imgur.com/fjj05bH.png" width="35%" /></li>
-    <li>Si el el ordenador no puede con la configuracion anterior podemos bajar los siguientes ajustes hasta encontrar nuestra configuracion ideal
+    <li><p>Graficos a tope para ordenadores potentes </p><img src="http://i.imgur.com/y3oXBgM.png" width="50%" /></li>
+    <li>Si el el ordenador no puede con la configuracion anterior podemos bajar los siguientes ajustes hasta encontrar nuestra configuracion ideal:
       <ul>
         <li>Animacion (La diferencia entre medio y alto apenas se nota pero si se nota en el rendimiento)</li>
         <li>Medio ambiente (Lo mismo que la anterior)</li>
@@ -37,5 +37,5 @@
         <li>Shaders (Esto consume bastante pero tambien se nota muchisimo el cambio)</li>
       </ul>
     </li>
-    <li><p>Yo suelo tenerlo como la siguiente imagen para tener un buen rendimiento en MCM.</p><img src="http://i.imgur.com/y3oXBgM.png" width="35%" /></li>
+    <li><p>Yo suelo tenerlo como la siguiente imagen para tener un buen rendimiento en MCM.</p><img src="http://i.imgur.com/fjj05bH.png" width="50%" /></li>
 </ul>
