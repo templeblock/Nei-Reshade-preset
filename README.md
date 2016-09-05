@@ -23,10 +23,12 @@
         <li>Textura de alta resolucion de personaje ON</li>
     </ul>
   </li>
+</ul>
+<ul>
   <ul>
-    <li><p>Graficos a tope para ordenadores potentes </p><img src="http://i.imgur.com/fjj05bH.png" width="35%" /></li>
-      <p>Si el el ordenador no puede con la configuracion anterior podemos bajar hasta encontrar nuestra configuracion ideal los siguientes ajustes</p>
+      <li><p>Graficos a tope para ordenadores potentes </p><img src="http://i.imgur.com/fjj05bH.png" width="35%" /></li>
   </ul>
+  <p>Si el el ordenador no puede con la configuracion anterior podemos bajar los siguientes ajustes hasta encontrar nuestra configuracion ideal</p>
   <ul>
       <li>Animacion (La diferencia entre medio y alto apenas se nota pero si se nota en el rendimiento)</li>
       <li>Medio ambiente (Lo mismo que la anterior)</li>
