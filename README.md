@@ -6,5 +6,3 @@
 <h2>Download<h2>
 </p>
 <p>Puedes descargarlo desde <a href="">aquí</a></p>
-<p>Puedes descargarlo desde <a href="">aquí</a></p><p>Puedes descargarlo desde <a href="">aquí</a></p>
-<p>Puedes descargarlo desde <a href="">aquí</a></p><p>Puedes descargarlo desde <a href="">aquí</a></p>
