@@ -3,10 +3,8 @@
 <p align="center">Es un conjunto de diferentes utilidades preconfiguradas que mejoran la imagen de Guild Wars 2.</p>
 <p align="center"><a href="https://discord.gg/0ftXDJBAS7ywDH7c"><img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="35%" /></a></p>
 </p>
-<h2>Download<h2>
-</p>
+<h2>Download</h2>
 <p>Puedes descargarlo desde <a href="https://github.com/Neikon/Nei-Reshade/releases">aquí.</a></p>
-</p>
 <h2>¿Como Instalarlo? </h2>
 <ul>
   <li>Lo primero que debemos hacer es intalar las liberias Dx9 de Microsoft que podemos descargar desde <a href="https://www.microsoft.com/download/details.aspx?id=8109">aquí</a> son impresindiblea para que todo funcione y son la base del funcionamiento del resto de herramientas.</li>
@@ -38,4 +36,10 @@
       </ul>
     </li>
     <li><p>Yo suelo tenerlo como la siguiente imagen para tener un buen rendimiento en MCM.</p><img src="http://i.imgur.com/fjj05bH.png" width="50%" /></li>
+</ul>
+Credit:
+<ul>
+  <li><a href="http://sfx.thelazy.net/games/preset/4856/"> Dr_Patrik</a></li>
+  <li><a href="http://reshade.me/"> Reshade</a></li>
+  <li><a href="https://www.youtube.com/watch?v=a5i5-2X4wMA"> WoodenPotatoes</a></li>
 </ul>
