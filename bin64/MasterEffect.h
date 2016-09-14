@@ -11,7 +11,7 @@
 |                                GLOBAL PARAMETERS                               |
 \*==============================================================================*/
 
-#define MASTEREFFECT_TOGGLEKEY	0x78	//[depending on keyboard layout] Key used to toggle all MasterEffect effects. See ReShade documentation for more info. 
+#define MASTEREFFECT_TOGGLEKEY	0x78	//[depending on keyboard layout] Key used to toggle all MasterEffect effects. See ReShade documentation for more info.
 
 #define USE_DEPTHBUFFER_OUTPUT	0	//[0 or 1] Depth Buffer Output: Shows you the pixel depth, this is for debugging or depth map creation only.
 #define USE_SPLITSCREEN		0	//[0 or 1] Splitscreen: Disables all effects on the right half of the screen to show changes.
@@ -23,8 +23,8 @@
 \*==============================================================================*/
 
 //COLOR
-#define USE_LUT			0	//[0 or 1] Color Lookup Table: Uses a gradient texture to adjust the colors of the image. 
-#define USE_CARTOON       	0 	//[0 or 1] Cartoon : "Toon"s the image. 
+#define USE_LUT			0	//[0 or 1] Color Lookup Table: Uses a gradient texture to adjust the colors of the image.
+#define USE_CARTOON       	0 	//[0 or 1] Cartoon : "Toon"s the image.
 #define USE_LEVELS        	0 	//[0 or 1] Levels : Sets a new black and white point. This increases contrast but causes clipping. Use Curves instead if you want to avoid that.
 #define USE_TECHNICOLOR 	0	//[0 or 1] Technicolor : Attempts to mimic the look of an old movie using the Technicolor three-strip color process. Algorithm from prod80
 #define USE_SWFX_TECHNICOLOR   	0 	//[0 or 1] Technicolor : Attempts to mimic the look of an old movie using the Technicolor three-strip color process. Algorithm from SweetFX
@@ -55,7 +55,7 @@
 #define USE_BLOOM 		1	//[0 or 1] Bloom: Makes bright lights bleed their light into their surroundings. NOT the SweetFX way to do bloom but a more proper way.
 #define USE_LENZFLARE 		1	//[0 or 1] Lenz Flare: Boris Vorontsov's Skyrim Lensflare with custom offsets, ported to MasterEffect.
 #define USE_CHAPMAN_LENS	0	//[0 or 1] Chapman's lensflare: Simple lensflare shader with one big halo.
-#define USE_GODRAYS		1	//[0 or 1] Godrays: Adds some light rays rotating around screen center.
+#define USE_GODRAYS		0	//[0 or 1] Godrays: Adds some light rays rotating around screen center.
 #define USE_ANAMFLARE		1	//[0 or 1] Anamorphic Lensflare: adds some horizontal light flare, simulating the use of an anamorphic lens while recording.
 
 //DEPTH BASED
@@ -67,7 +67,7 @@
 #define USE_FISHEYE_CA		0	//[0 or 1] Fisheye lens & Chromatic Aberration: Adds some RGB shift in colors and distorts image to look like the "fisheye" effect.
 #define USE_GRAIN		0	//[0 or 1] Grain: Adds some image grain, looks like when a TV has no signal.
 #define USE_EXPLOSION     	0 	//[0 or 1] Explosion : Scatters the pixels, making the image look fuzzy.
-#define USE_SMAA		1	//[0 or 1] SMAA Anti-aliasing : Smoothens jagged lines using the SMAA technique.
+#define USE_SMAA		0	//[0 or 1] SMAA Anti-aliasing : Smoothens jagged lines using the SMAA technique.
 #define USE_HEATHAZE 		0	//[0 or 1] Heat Haze: Convection in heated air causes the temperature of the air to vary and causes a shimmery effect that distorts whatever is behind.
 #define USE_LED_SHADER		0	//[0 or 1] LED: Simulates the look of a LED panel.
 
@@ -94,7 +94,7 @@
 #define Levels_white_point 		235   	//[0 to 255] The new white point. Everything brighter than this becomes completely white. Default is 235.0
 
 //TECHNICOLOR
-#define ColStrengthR 			0.2	//[0.05 to 1.0] Color Strength of Red channel. Higher means darker and more intense colors.	
+#define ColStrengthR 			0.2	//[0.05 to 1.0] Color Strength of Red channel. Higher means darker and more intense colors.
 #define ColStrengthG 			0.2	//[0.05 to 1.0] Color Strength of Green channel. Higher means darker and more intense colors.
 #define ColStrengthB 			0.2	//[0.05 to 1.0] Color Strength of Blue channel. Higher means darker and more intense colors.
 #define TechniBrightness 		1.0	//[0.5 to 1.5] Brightness Adjustment, higher means brighter image.
@@ -114,7 +114,7 @@
 #define DPXBlue  			8.0  	//[1.0 to 15.0] ""
 #define DPXColorGamma    		2.2  	//[0.1 to 2.5] Adjusts the colorfulness of the effect in a manner similar to Vibrance. 1.0 is neutral.
 #define DPXSaturation 			1.3  	//[0.0 to 8.0] Adjust saturation of the effect. 1.0 is neutral.
-#define DPXRedC   			0.36 	//[0.60 to 0.20] 
+#define DPXRedC   			0.36 	//[0.60 to 0.20]
 #define DPXGreenC 			0.36 	//[0.60 to 0.20]
 #define DPXBlueC  			0.36 	//[0.60 to 0.20]
 #define DPXBlend 			0.10  	//[0.00 to 1.00] How strong the effect should be.
@@ -146,7 +146,7 @@
                              			//7 = Abs add, 8 = Techicolor Cinestyle, 9 = Parabola, 10 = Half-circles.
                              			//Note that Technicolor Cinestyle is practically identical to Sine, but runs slower. In fact I think the difference might only be due to rounding errors.
                              			//I prefer 2 myself, but 3 is a nice alternative with a little more effect (but harsher on the highlight and shadows) and it's the fastest formula.
-		
+
 //SEPIA
 #define ColorTone 		float3(1.40, 1.10, 0.90) //[0.00 to 2.55, 0.00 to 2.55, 0.00 to 2.55] What color to tint the image
 #define GreyPower  			0.11    //[0.00 to 1.00] How much desaturate the image before tinting it
@@ -155,46 +155,46 @@
 //SKYRIM TONEMAPPING
 #define POSTPROCESS			6 	//[1 to 6] Mode of postprocessing you want. Mode 1 uses V1 values, Mode 2 uses V2 values etc
 //
-#define	EAdaptationMinV1   		0.05 
-#define	EAdaptationMaxV1   		0.125 
-#define	EContrastV1   			1.0 
-#define	EColorSaturationV1   		1.0 
-#define	EToneMappingCurveV1   		6.0 
-//	
-#define	EAdaptationMinV2 		0.36 
-#define	EAdaptationMaxV2 		0.29 
-#define	EToneMappingCurveV2 		8.0 
-#define	EIntensityContrastV2 		2.5 
-#define	EColorSaturationV2		3.2 
-#define	EToneMappingOversaturationV2 	180.0 
+#define	EAdaptationMinV1   		0.05
+#define	EAdaptationMaxV1   		0.125
+#define	EContrastV1   			1.0
+#define	EColorSaturationV1   		1.0
+#define	EToneMappingCurveV1   		6.0
 //
-#define	EAdaptationMinV3   		0.001 
-#define	EAdaptationMaxV3   		0.025 
-#define	EToneMappingCurveV3   		30.0  
-#define	EToneMappingOversaturationV3    111160.0 
+#define	EAdaptationMinV2 		0.36
+#define	EAdaptationMaxV2 		0.29
+#define	EToneMappingCurveV2 		8.0
+#define	EIntensityContrastV2 		2.5
+#define	EColorSaturationV2		3.2
+#define	EToneMappingOversaturationV2 	180.0
 //
-#define	EAdaptationMinV4   		0.2 
-#define	EAdaptationMaxV4  		0.125 
-#define	EBrightnessCurveV4  		0.7 
-#define	EBrightnessMultiplierV4  	0.45 
-#define	EBrightnessToneMappingCurveV4   0.3 
+#define	EAdaptationMinV3   		0.001
+#define	EAdaptationMaxV3   		0.025
+#define	EToneMappingCurveV3   		30.0
+#define	EToneMappingOversaturationV3    111160.0
 //
-#define	EAdaptationMinV5   		0.08 
-#define	EAdaptationMaxV5   		0.20  
-#define	EToneMappingCurveV5   		8  
-#define	EIntensityContrastV5   		3.475  
-#define	EColorSaturationV5   		4 
-#define HCompensateSatV5   		2  
-#define	EToneMappingOversaturationV5    180.0 
+#define	EAdaptationMinV4   		0.2
+#define	EAdaptationMaxV4  		0.125
+#define	EBrightnessCurveV4  		0.7
+#define	EBrightnessMultiplierV4  	0.45
+#define	EBrightnessToneMappingCurveV4   0.3
 //
-#define	EBrightnessV6Day   		2.5 							
-#define EIntensityContrastV6Day   	1.5 					
-#define	EColorSaturationV6Day  	 	2.0  					
-#define HCompensateSatV6Day   		3.0 						
-#define	EAdaptationMinV6Day   		0.64 						
-#define	EAdaptationMaxV6Day   		0.24 						
-#define	EToneMappingCurveV6Day  	8 
-#define	EToneMappingOversaturationV6Day  2500.0 
+#define	EAdaptationMinV5   		0.08
+#define	EAdaptationMaxV5   		0.20
+#define	EToneMappingCurveV5   		8
+#define	EIntensityContrastV5   		3.475
+#define	EColorSaturationV5   		4
+#define HCompensateSatV5   		2
+#define	EToneMappingOversaturationV5    180.0
+//
+#define	EBrightnessV6Day   		2.5
+#define EIntensityContrastV6Day   	1.5
+#define	EColorSaturationV6Day  	 	2.0
+#define HCompensateSatV6Day   		3.0
+#define	EAdaptationMinV6Day   		0.64
+#define	EAdaptationMaxV6Day   		0.24
+#define	EToneMappingCurveV6Day  	8
+#define	EToneMappingOversaturationV6Day  2500.0
 
 //COLORMOOD
 #define fRatio				0.4 	//[0.00 to 3.00] Amount of moody coloring you want
@@ -215,7 +215,7 @@
 #define Contrast			1.0	//[0.5 to 2.0] Contrast.
 #define FSaturation			-0.15
 #define FBleach				0.005 	//[-0.5 to 1.0] More bleach means more contrasted and less colorful image
-#define FRedCurve			6.0 
+#define FRedCurve			6.0
 #define FGreenCurve			6.0
 #define FBlueCurve			6.0
 #define BaseCurve			1.5
@@ -289,7 +289,7 @@
 #define CHAPMANDEPTHCHECK		1	//[0 or 1] if 1, only pixels with depth = 1 get lensflares, this prevents white objects from getting lensflare source which would normally happen in LDR
 #define ChapFlareTreshold		0.94	//[0.7 to 0.99] Brightness threshold for lensflare generation. Everything brighter than this value gets a flare.
 #define ChapFlareCount 			15	//[1 to 20] Number of single halos to be generated. If set to 0, only the curved halo around is visible.
-#define ChapFlareDispersal 		1.0	//[0.25 to 1.0] Distance from screen center (and from themselves) the flares are generated. 		
+#define ChapFlareDispersal 		1.0	//[0.25 to 1.0] Distance from screen center (and from themselves) the flares are generated.
 #define ChapFlareSize 			0.8	//[0.2 to 0.8] Distance (from screen center) the halo and flares are generated.
 #define ChapFlareCA  		float3(0.0,0.01,0.02) //[-0.5 to 0.5] Offset of RGB components of flares as modifier for Chromatic abberation. Same 3 values means no CA.
 #define ChapFlareIntensity 		5.0	//[5.0 to 20.0] Intensity of flares and halo, remember that higher threshold lowers intensity, you might play with both values to get desired result.
@@ -305,7 +305,7 @@
 
 //ANAMORPHIC LENSFLARE
 #define bFlareDepthCheckEnable		1	//[0 or 1] if 1, only pixels with depth = 1 get an anamflare, this prevents white objects from getting flare source which would normally happen in LDR
-#define fFlareLuminance 		0.95	//[0.6 to 1.0] bright pass luminance value 
+#define fFlareLuminance 		0.95	//[0.6 to 1.0] bright pass luminance value
 #define fFlareBlur 			200.0	// [1.0 to 9999999] manages the size of the flare
 #define fFlareIntensity 		4	// [0.2 to 5.0] effect intensity
 #define fFlareTint			float3(0.137, 0.216, 1.0)	// [0.0 to 2.0] effect tint RGB
@@ -364,7 +364,7 @@
 #define fRayHBAO_AngleBiasTan 		0.0	//[0.0 to 1.0] Angle bias in tangent space. Used for ignoring occluders that don't have a big angle difference to the source, i.e. flat surfaces that may shadoe themselves.
 
 //AMBIENT OCCLUSION - SCALABLE AMBIENT OBSCURANCE
-#define fSAOIntensity 			6.0	//[1.0 to 10.0] Linearly multiplies AO intensity.	
+#define fSAOIntensity 			6.0	//[1.0 to 10.0] Linearly multiplies AO intensity.
 #define fSAOClamp 			2.5	//[1.0 to 10.0] Higher values shift AO more into black. Useful for light gray AO caused by high SAO radius.
 #define fSAORadius 			2.3	//[1.0 to 10.0] SAO sampling radius. Higher values also lower AO intensity extremely because of Alchemy's extremely retarded falloff formula.
 #define fSAOBias 			0.2	//[0.001 to 0.05] Minimal surface angle for AO consideration. Useful to prevent self-occlusion of flat surfaces caused by floating point inaccuracies.
@@ -377,7 +377,7 @@
 #define DOF_NEARBLURCURVE 		10	//[0.4 to X] Power of blur of closer-than-focus areas.
 #define DOF_FARBLURCURVE 		0.4	//[0.4 to X] Elementary, my dear Watson: Blur power of areas behind focus plane.
 #define DOF_BLURRADIUS 			4.0	//[5.0 to 50.0] Blur radius approximately in pixels. Radius, not diameter.
-#define DOF_MANUALFOCUS   		1	//[0 or 1] Enables manual focus. 	
+#define DOF_MANUALFOCUS   		1	//[0 or 1] Enables manual focus.
 #define DOF_MANUALFOCUSDEPTH 		0.42	//[0.0 to 1.0] Manual focus depth. 0.0 means camera is focus plane, 1.0 means sky is focus plane.
 
 //DEPTH OF FIELD - RING DOF
@@ -393,18 +393,18 @@
 #define fMagicDOFColorCurve 		3.0	//[1.0 to 10.0] DOF weighting curve.
 
 //DEPTH OF FIELD - GP65CJ042 DOF
-#define	iGPDOFQuality 			2	//[0 to 7] 0: only slight gaussian farblur but no bokeh. 1-7 bokeh blur, higher means better quality of blur but less fps. 
+#define	iGPDOFQuality 			2	//[0 to 7] 0: only slight gaussian farblur but no bokeh. 1-7 bokeh blur, higher means better quality of blur but less fps.
 #define bGPDOFPolygonalBokeh 		1	//[0 or 1] Enables polygonal bokeh shape, e.g. POLYGON_NUM 5 means pentagonal bokeh shape. Setting this value to 0 results in circular bokeh shape.
-#define	iGPDOFPolygonCount 		5	//[3 to 9] Controls the amount pf polygons for polygonal bokeh shape. 3 = triangular, 4 = square, 5 = pentagonal etc.	
+#define	iGPDOFPolygonCount 		5	//[3 to 9] Controls the amount pf polygons for polygonal bokeh shape. 3 = triangular, 4 = square, 5 = pentagonal etc.
 #define	fGPDOFBias 			0.00	//[0.0 to 20.0] Shifts bokeh weighting to bokeh shape edge. Set to 0 for even bright bokeh shapes, raise it for darker bokeh shapes in center and brighter on edge.
 #define	fGPDOFBiasCurve 		0.0	//[0.0 to 3.0] Power of Bokeh Bias. Raise for more defined bokeh outlining on bokeh shape edge.
 #define	fGPDOFBrightnessThreshold 	1.8	//[0.6 to 2.0] Threshold for bokeh brightening. Above this value, everything gets much much brighter. 1.0 is maximum value for LDR games like GTASA, higher values work only on HDR games like Skyrim etc.
 #define	fGPDOFBrightnessMultiplier 	2.00	//[0.0 to 2.0] Amount of brightening for pixels brighter than fGPDOFBrightnessThreshold.
-#define	fGPDOFChromaAmount 		0.0	//[0.00 to 0.4] Amount of color shifting applied on blurred areas. 
+#define	fGPDOFChromaAmount 		0.0	//[0.00 to 0.4] Amount of color shifting applied on blurred areas.
 
 //DEPTH OF FIELD - MATSO DOF
 #define bMatsoDOFChromaEnable		1	//[0 or 1] Enables Chromatic Abberation.
-#define bMatsoDOFBokehEnable		1	//[0 or 1] Enables Bokeh weighting do define bright light spots and increase bokeh shape definiton.	
+#define bMatsoDOFBokehEnable		1	//[0 or 1] Enables Bokeh weighting do define bright light spots and increase bokeh shape definiton.
 #define fMatsoDOFChromaPow		1.4	//[0.2 to 3.0] Amount of chromatic abberation color shifting.
 #define fMatsoDOFBokehCurve		8.0	//[0.5 to 20.0] Bokeh curve.
 #define fMatsoDOFBokehLight		0.012 	//[0.0 to 2.0] Bokeh brightening factor.
@@ -442,7 +442,7 @@
 #define iSMAACornerRounding		100	//[0 to 100] Determines the percent of antialiasing to apply to corners. 0 seems to affect fine text the least so it's the default.
 #define iSMAAEdgeDetectionMode		2	//[1 to 3] 1: Luma edge detection 2: Color edge detection 3: Depth edge detection
 #define bSMAAPredication		0	//[0 or 1] Enables predication which uses BOTH the color and the depth texture for edge detection to more accurately detect edges.
-#define fSMAAPredicationThreshold	0.01	//[0.001 to 0.2] Threshold to be used in the depth buffer.                                      
+#define fSMAAPredicationThreshold	0.01	//[0.001 to 0.2] Threshold to be used in the depth buffer.
 #define fSMAAPredicationScale		2.0	//[0.5 to 4.0] How much to scale the global Threshold used for luma or color edge detection when using predication
 #define fSMAAPredicationStrength	0.4	//[0.1 to 1.0] How much to locally decrease the Threshold.
 #define iSMAADebugOutput		0	//[0 to 4] 0: Normal | 1: edgesTex | 2: blendTex | 3: areaTex | 4: searchTex - Only for troubleshooting. Users don't need to mess with this.
@@ -463,7 +463,7 @@
 \*==============================================================================*/
 
 //HD6VIGNETTE
-#define fHD6VignetteMode 		1	//[1 to 3] Vignette Alignment 1: Left and right | 2: top and bottom | 3: corners.		
+#define fHD6VignetteMode 		1	//[1 to 3] Vignette Alignment 1: Left and right | 2: top and bottom | 3: corners.
 #define fHD6VignetteTop			0.7	//[0.3 to 1.5] Top/left (depending on mode) height of bar.
 #define fHD6VignetteBottom		0.7	//[0.3 to 1.5] Bottom/right (depending on mode) height of bar.
 #define fHD6VignetteRoundness		0.0	//[0.0 to 100000.0] Amount of circularism (new word invented hoho), 0 means linear vignette, 100000.0 means rougly total circle.
