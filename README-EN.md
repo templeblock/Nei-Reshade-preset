@@ -2,7 +2,7 @@
 <p align="center"><img src="http://i.imgur.com/PFs5TJ3.jpg" width="100%" /></p>
 <p align="center"><h2>What is this?<h2></p>
 <p align="center">It is a pre-configured set of different utilities that improve the image of Guild Wars 2.</p>
-<p align="center"><a href="https://discord.gg/0ftXDJBAS7ywDH7c"><img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="35%" /></a></p>
+<p align="center"><a href="https://discord.gg/0ftXDJBAS7ywDH7c"><img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="35%" /></a> <a href="https://github.com/Neikon/Nei-Reshade/blob/master/README-EN.md"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/English_language.png" width="35%" /></a> <a href="https://github.com/Neikon/Nei-Reshade"><img src="http://www.flagsinformation.com/spanish-flag.png" width="35%" /></a></p>
 </p>
 <h2>Download</h2>
 <p>You can download it from <a href="https://github.com/Neikon/Nei-Reshade/releases">here.</a></p>
