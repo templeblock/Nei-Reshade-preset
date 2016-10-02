@@ -2,7 +2,7 @@
 <p align="center"><img src="http://i.imgur.com/PFs5TJ3.jpg" width="100%" /></p>
 <p align="center"><h2>¿Que es esto?<h2></p>
 <p align="center">Es un conjunto de diferentes utilidades preconfiguradas que mejoran la imagen de Guild Wars 2.</p>
-<p align="center"><a href="https://discord.gg/0ftXDJBAS7ywDH7c"><img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="30%" /></a> <a href="https://github.com/Neikon/Nei-Reshade/blob/master/README-EN.md"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/English_language.png" width="30%" /></a> <a href="https://github.com/Neikon/Nei-Reshade"><img src="http://www.flagsinformation.com/spanish-flag.png" width="30%" /></a></p>
+<p align="center"><a href="https://discord.gg/0ftXDJBAS7ywDH7c"><img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="20%" /></a> <a href="https://github.com/Neikon/Nei-Reshade/blob/master/README-EN.md"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/English_language.png" width="20%" /></a> <a href="https://github.com/Neikon/Nei-Reshade"><img src="http://www.flagsinformation.com/spanish-flag.png" width="18%" /></a></p>
 </p>
 <h2>Download</h2>
 <p>Puedes descargarlo desde <a href="https://github.com/Neikon/Nei-Reshade/releases">aquí.</a></p>
