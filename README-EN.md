@@ -24,7 +24,7 @@
 </ul>
 
 <ul>
-    <li><p>Graphics butt for powerful computers/p><img src="http://i.imgur.com/y3oXBgM.png" width="50%" /></li>
+    <li><p>Graphics butt for powerful computers</p><img src="http://i.imgur.com/y3oXBgM.png" width="50%" /></li>
     <li>If the computer can not with the above configuration we can lower the following settings to find our ideal setup:
       <ul>
         <li> Animation (The difference between medium and high barely noticeable but if you notice performance) </li>
