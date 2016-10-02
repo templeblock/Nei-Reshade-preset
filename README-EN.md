@@ -11,7 +11,7 @@
   <li>The first thing to do is install the Microsoft DX9 Liberias you can download from  <a href="https://www.microsoft.com/download/details.aspx?id=8109">here</a> are impresindiblea to make things work and are the basis of the operation of other tools.</li>
   <li>We downloaded the latest version of Nei-Reshade from <a href="https://github.com/Neikon/Nei-Reshade/releases">here.</a></li>
   <li>Nei-Reshade.zip open and extract the "bin64" folder inside the game folder. (To upgrade will remove the bin64 folder in the folder and then ask us if we want to replace the files and accept)</li>
-  <li>Run the game and if everything went well in the upper left corner white text will inform you that everything is loaded correctly.</li>
+  <li>Run the game and if everything went well in the upper left corner white text will inform you that everything is loaded correctly.<p>Note: With the F9 key you can activate/deactivate</p></li>
   <li>Now we set the game options:
     <ul>
         <li>Ambient Occlusion OFF</li>

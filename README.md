@@ -12,7 +12,8 @@
   <li>Descargamos la ultima version de Nei-Reshade desde <a href="https://github.com/Neikon/Nei-Reshade/releases">aquí.</a></li>
   <li>Abrimos Nei-Reshade.zip y extraemos la carpeta "bin64" dentro de la carpeta del juego.
     (Para actualizar sera extraer la carpeta bin64 en la carpeta y luego nos preguntara si deseamos sustituir los archivos y aceptamos)</li>
-  <li>Ejecutamos el juego y si todo a ido bien en la esquina superior izquierda saldrá un texto blanco informando lo que todo se ha cargado correctamente.</li>
+  <li>Ejecutamos el juego y si todo a ido bien en la esquina superior izquierda saldrá un texto blanco informando lo que todo se ha cargado correctamente.<p>Nota: Con la tecla F9 puedes activarlo/desactivarlo</p></li>
+
   <li>Ahora deberemos configurar las opciones del juego:
     <ul>
         <li>Oclusion ambiental OFF</li>
