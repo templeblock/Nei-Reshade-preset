@@ -2,17 +2,18 @@
 <p align="center"><img src="http://i.imgur.com/PFs5TJ3.jpg" width="100%" /></p>
 <p align="center"><h2>¿Que es esto?<h2></p>
 <p align="center">Es un conjunto de diferentes utilidades preconfiguradas que mejoran la imagen de Guild Wars 2.</p>
-<p align="center"><a href="https://discord.gg/0ftXDJBAS7ywDH7c"><img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="35%" /></a></p>
+<p align="center"><a href="https://discord.gg/0ftXDJBAS7ywDH7c"><img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" height="100px" width="20%" /></a> <a href="https://github.com/Neikon/Nei-Reshade/blob/master/README-EN.md"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/English_language.png" height="100px" width="20%" /></a> <a href="https://github.com/Neikon/Nei-Reshade"><img src="http://www.flagsinformation.com/spanish-flag.png" height="100px" width="20%" /></a></p>
 </p>
 <h2>Download</h2>
 <p>Puedes descargarlo desde <a href="https://github.com/Neikon/Nei-Reshade/releases">aquí.</a></p>
 <h2>¿Como Instalarlo? </h2>
 <ul>
-  <li>Lo primero que debemos hacer es intalar las liberias Dx9 de Microsoft que podemos descargar desde <a href="https://www.microsoft.com/download/details.aspx?id=8109">aquí</a> son impresindiblea para que todo funcione y son la base del funcionamiento del resto de herramientas.</li>
+  <li>Lo primero que debemos hacer es intalar las liberias Dx9 de Microsoft que podemos descargar desde <a href="https://www.microsoft.com/download/details.aspx?id=8109">aquí</a> son impresindibles para que todo funcione y son la base del funcionamiento del resto de herramientas.</li>
   <li>Descargamos la ultima version de Nei-Reshade desde <a href="https://github.com/Neikon/Nei-Reshade/releases">aquí.</a></li>
   <li>Abrimos Nei-Reshade.zip y extraemos la carpeta "bin64" dentro de la carpeta del juego.
     (Para actualizar sera extraer la carpeta bin64 en la carpeta y luego nos preguntara si deseamos sustituir los archivos y aceptamos)</li>
-  <li>Ejecutamos el juego y si todo a ido bien en la esquina superior izquierda saldrá un texto blanco informando lo que todo se ha cargado correctamente.</li>
+  <li>Ejecutamos el juego y si todo a ido bien en la esquina superior izquierda saldrá un texto blanco informando lo que todo se ha cargado correctamente.<p>Nota: Con la tecla F9 puedes activarlo/desactivarlo</p></li>
+
   <li>Ahora deberemos configurar las opciones del juego:
     <ul>
         <li>Oclusion ambiental OFF</li>
