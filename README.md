@@ -8,7 +8,7 @@
 <p>Puedes descargarlo desde <a href="https://github.com/Neikon/Nei-Reshade/releases">aquí.</a></p>
 <h2>¿Como Instalarlo? </h2>
 <ul>
-  <li>Lo primero que debemos hacer es intalar las liberias Dx9 de Microsoft que podemos descargar desde <a href="https://www.microsoft.com/download/details.aspx?id=8109">aquí</a> son impresindibles para que todo funcione y son la base del funcionamiento del resto de herramientas. NOTA: Cuando lo descargas y le das Doble click lo primero que te pide es descomprimirse, hazlo en una carpeta cualquiera vacia, y luego cuando acabe busca en ella dxsetup.exe y ejecutalo y ahora si que lo estas instalando.</li>
+  <li>Lo primero que debemos hacer es intalar las liberias Dx9 de Microsoft que podemos descargar desde <a href="https://www.microsoft.com/download/details.aspx?id=8109">aquí</a> son impresindibles para que todo funcione y son la base del funcionamiento del resto de herramientas. <b>NOTA:</b> Cuando lo descargas y le das Doble click lo primero que te pide es descomprimirse, hazlo en una carpeta cualquiera vacia, y luego cuando acabe busca en ella dxsetup.exe y ejecutalo y ahora si que lo estas instalando.</li>
   <li>Descargamos la ultima version de Nei-Reshade desde <a href="https://github.com/Neikon/Nei-Reshade/releases">aquí.</a></li>
   <li>Abrimos Nei-Reshade.zip y extraemos la carpeta "bin64" dentro de la carpeta del juego.
     (Para actualizar sera extraer la carpeta bin64 en la carpeta y luego nos preguntara si deseamos sustituir los archivos y aceptamos)</li>
